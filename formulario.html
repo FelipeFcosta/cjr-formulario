@@ -1,0 +1,105 @@
+<!DOCTYPE html> <!-- informar ao navegador que o arquivo é html -->
+<html lang="pt-br">
+<!-- 'main' do html -->
+
+<head>
+  <!-- cabecalho do site -->
+  <meta charset="UTF-8"> <!-- renderizar caracteres normalmente -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tela de Cadastro</title>
+</head>
+
+<body>
+  <!-- conteudo do site -->
+  <main>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <h1>Entrar</h1>
+            <label for="user_email">
+              Usuário/Email </br>
+              <input type="text" id="user_email" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass">
+              Senha </br>
+              <input type="password" id="pass" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="horizontal">
+              <div>
+                <input type="checkbox" id="remember">
+                <label for="remember"><small>Lembrar-me</small></label>
+              </div>
+              <input type="button" class="button" id="login" value="Log in">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#">esqueceu a senha?</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <form>
+      <table>
+        <tr>
+          <td>
+            <h1>Cadastrar</h1>
+            <label for="user">
+              Usuário </br>
+              <input type="text" id="user" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">
+              Email </br>
+              <input type="text" id="email" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass_create">
+              Crie sua senha </br>
+              <input type="password" id="pass_create" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass_confirm">
+              Confirme sua senha </br>
+              <input type="password" id="pass_confirm" size="30px">
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="horizontal">
+              <div>
+                <input type="checkbox" id="terms">
+                <label for="terms"><small>Concordo com os termos</small></label>
+              </div>
+              <input type="button" class="button" id="signup" value="Sign up">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+</body>
+</html>
