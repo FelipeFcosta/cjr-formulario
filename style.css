@@ -10,7 +10,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 2rem;
     margin: 4rem 1rem;
 }
 
@@ -30,7 +30,7 @@ form {
 table {
     width: 100%;
     background-color: white;
-    border-spacing: 0.5rem 1.1rem;
+    border-spacing: 0.5rem 1.5rem;
     border: 1px rgb(129, 146, 143) solid;
     padding: 0.5rem 0.7rem;
     border-radius: 2%;
@@ -42,7 +42,7 @@ label:hover {
     cursor: pointer;
 }
 
-div.horizontal {
+div.check_and_btn {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ input[type="text"]:focus, input[type="password"]:focus {
 }
 
 .button {
-    height: 30px;
+    height: 2rem;
     background-color: rgb(49, 185, 67);
     color: white;
     border-radius: 10%;
@@ -106,8 +106,46 @@ div.restaura {
 }
 
 #restaura {
-    height: 3em;
     width: 50%;
     border-radius: 2em;
     margin: 0px;
+}
+
+hr {
+    display: none;
+}
+
+@media only screen and (max-width: 820px) {
+    form {
+        max-width: none;
+        min-width: none;
+    }
+    
+    table {
+        border: none;
+        border-radius: 2%;
+        box-shadow: none;
+    }
+    
+    div.check_and_btn {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5em;
+    }
+    
+    #login, #signup, #restaura {
+        height: 3rem;
+        border-radius: 2em;
+        width: 100%;
+    }
+    
+    hr {
+        border: 0;
+        clear:both;
+        display:block;
+        width: 96%;               
+        background-color:#808080;
+        height: 1px;
+    }
 }
